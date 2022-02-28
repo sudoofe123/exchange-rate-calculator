@@ -1,0 +1,109 @@
+:root {
+    --primary--color: #5fbaa7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( to right top, #1adfe0, #30d6d7, #3dcccf, #47c3c6, #4ebabd, #4eb2b4, #4daaac, #4ca2a3, #459999, #3e908e, #388884, #317f7a);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.btn {
+    color: rgb(247, 241, 241);
+    background-color: #222;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.money-img {
+    width: 170px;
+    height: 125px;
+    box-shadow: 2px 2px 8px 4px rgb(54, 127, 141);
+}
+
+.currency {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    appearance: none;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-position: right 10px top 50%, 0, 0;
+    background-size: 12px auto, 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    background-color: #fff;
+    margin-left: 10px;
+    /* border: 1px solid #222; */
+    text-align: center;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    font-size: 14px;
+    padding: 4px 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+    p,
+    h2 {
+        padding: 0 10px;
+    }
+    .money-img {
+        width: 300px;
+        height: 200px;
+        width: 0 auto;
+    }
+}
